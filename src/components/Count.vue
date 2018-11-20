@@ -23,11 +23,16 @@
         msg: "hello vuex"
       };
     },
-    computed:{
-      // 优化写法
-      count(){
-        return this.$store.state.count;
-      }
+    // computed:{
+    //   // 优化写法
+    //   count(){
+    //     return this.$store.state.count;
+    //   }
+    // },
+    // 第三种写法 得先导包 这种最简便
+    computed: mapState(['count']),
+    mounted() {
+      console.log(this.$store);
     },
     mounted() {
       console.log(this.$store)
