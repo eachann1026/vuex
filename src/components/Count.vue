@@ -17,6 +17,7 @@
 <script>
   import store from "@/vuex/store";
   import hello from "@/components/HelloWorld";
+  import {mapState} from 'vuex'
   export default {
     data() {
       return {
