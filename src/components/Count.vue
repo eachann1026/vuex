@@ -35,9 +35,6 @@
     mounted() {
       console.log(this.$store);
     },
-    mounted() {
-      console.log(this.$store)
-    },
     // 不是组件(components)可以直接注册
     store,
 
